@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list > .item {
+    float: left
+}
+
+.item {
+    position: relative;
+}
+
+.item a {
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    background-color: rgb(60, 58, 58);
+}
+
+.item a:hover {
+    background-color: rgb(231, 186, 103);
+    color: brown;
+}
+
+.item::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgb(231, 186, 103);
+}
+
+.item-drop a {
+    background-color: rgb(231, 186, 103);
+    color: brown;
+    width: 260px;
+}
+
+.list-drop {
+    display: none;
+    position: absolute;
+    top: 61px;
+}
+
+.item:hover .list-drop {
+    display: block;
+}
+
+.item:hover a {
+    background-color: rgb(231, 186, 103);
+    color: brown;
+}
+
+.item-drop a:hover {
+    background-color: rgb(247, 228, 192);
+    color: rgb(60, 58, 58);
+}
+
+.float {
+    float: right;
+    font-size: 22px;
+}
+
+.list-drop-product {
+    display: none;
+    position: absolute;
+    left: 260px;
+    top: 0;
+}
+
+.item-drop:hover .list-drop-product {
+    display: block;
+}
+
+.item-drop {
+    position: relative;
+    border: 1px solid rgb(60, 58, 58);
+}
+
+.item-drop:hover a {
+    background-color: rgb(247, 228, 192);
+    color: rgb(60, 58, 58);
+}
+
+.item-drop-product a:hover {
+    background-color: rgb(231, 186, 103);
+    color: brown;
+}
+
+.item-drop-product {
+    border: 1px solid rgb(60, 58, 58);
+}
+
